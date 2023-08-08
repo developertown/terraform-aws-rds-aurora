@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-aws-rds-aurora
+  description: AWS RDS Aurora terraform module
+  annotations:
+    github.com/project-slug: developertown/terraform-aws-rds-aurora
+  tags:
+    - terraform
+    - aws
+    - rds
+spec:
+  type: terraform-module
+  lifecycle: production
+  owner: dt-devops
