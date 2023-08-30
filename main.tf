@@ -7,6 +7,8 @@ module "database" {
   source  = "terraform-aws-modules/rds-aurora/aws"
   version = "8.3.1"
 
+  count = local.enabled ? 1 : 0
+
   name                = local.name
   engine              = var.engine
   engine_version      = var.engine_version
